@@ -1,0 +1,295 @@
+.payment-page,
+.payment-page * {
+  box-sizing: border-box;
+}
+.payment-page {
+  background: #d143b2;
+  height: 1024px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.smoochez-co {
+  color: #fffdfd;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  width: 390px;
+  height: 50px;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 963px;
+  top: 58px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1114px;
+  top: 58px;
+}
+.my-past-work {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1252px;
+  top: 58px;
+}
+.shipping-details {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 602px;
+  top: 174px;
+  width: 328px;
+  height: 66px;
+}
+.rectangle-2 {
+  background: #fffefe;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 364px;
+  height: 40px;
+  position: absolute;
+  left: 366px;
+  top: 615px;
+}
+.rectangle-3 {
+  background: #fffefe;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 364px;
+  height: 40px;
+  position: absolute;
+  left: 803px;
+  top: 615px;
+}
+._2025-02-24-12-29-50-1 {
+  width: 89px;
+  height: 96px;
+  position: absolute;
+  left: 30px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 89/96;
+}
+.name {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 370px;
+  top: 247px;
+}
+.address {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 758px;
+  top: 247px;
+}
+.state {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 365px;
+  top: 330px;
+}
+.city {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 756px;
+  top: 420px;
+}
+.zip-code {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 756px;
+  top: 330px;
+}
+.rectangle-4 {
+  background: #d9d9d9;
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  left: 366px;
+  top: 285px;
+}
+.rectangle-6 {
+  background: #d9d9d9;
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  left: 758px;
+  top: 460px;
+}
+.rectangle-7 {
+  background: #d9d9d9;
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  left: 756px;
+  top: 370px;
+}
+.rectangle-5 {
+  background: #d9d9d9;
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  left: 756px;
+  top: 285px;
+}
+.rectangle-8 {
+  background: #d9d9d9;
+  width: 310px;
+  height: 40px;
+  position: absolute;
+  left: 365px;
+  top: 370px;
+}
+.payment-information {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 552px;
+  top: 512px;
+  width: 428px;
+  height: 30px;
+}
+.name-on-card {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 370px;
+  top: 580px;
+  width: 240px;
+  height: 30px;
+}
+.card-number {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 803px;
+  top: 580px;
+  width: 380px;
+  height: 40px;
+}
+.rectangle-9 {
+  background: #fffefe;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 366px;
+  top: 740px;
+}
+.rectangle-10 {
+  background: #fffefe;
+  width: 150px;
+  height: 40px;
+  position: absolute;
+  left: 807px;
+  top: 740px;
+}
+.exp-date {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 365px;
+  top: 705px;
+  width: 110px;
+  height: 20px;
+}
+.security-code-code {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 807px;
+  top: 705px;
+  width: 173px;
+  height: 20px;
+}
+.you-will-not-be-charged-until-your-order-is-confirmed-and-you-receive-an-invoice {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 340px;
+  top: 900px;
+  width: 880px;
+  height: 30px;
+}
+.back-to-custom-order-page {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 85px;
+  top: 174px;
+  width: 350px;
+  height: 40px;
+}
+.arrow-1 {
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 75px;
+  top: 190px;
+  transform: translate(-31px, -7.36px);
+  overflow: visible;
+}

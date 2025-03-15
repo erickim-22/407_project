@@ -1,0 +1,274 @@
+.materials-page,
+.materials-page * {
+  box-sizing: border-box;
+}
+.materials-page {
+  background: #d143b2;
+  height: 1024px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.smoochez-co {
+  color: #fffdfd;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  width: 390px;
+  height: 50px;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 963px;
+  top: 58px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1114px;
+  top: 58px;
+}
+.my-past-work {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1252px;
+  top: 58px;
+}
+._2025-02-24-12-29-50-1 {
+  width: 89px;
+  height: 96px;
+  position: absolute;
+  left: 30px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 89/96;
+}
+.materials-inventory {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 190px;
+  width: 331px;
+  height: 66px;
+}
+.rectangle-11 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 341px;
+}
+.rectangle-23 {
+  background: #413e3e;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 300px;
+}
+.rectangle-12 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 382px;
+}
+.rectangle-21 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 751px;
+}
+.rectangle-22 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 792px;
+}
+.rectangle-24 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 833px;
+}
+.rectangle-25 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 874px;
+}
+.rectangle-19 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 669px;
+}
+.rectangle-20 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 710px;
+}
+.rectangle-17 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 587px;
+}
+.rectangle-18 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 628px;
+}
+.rectangle-13 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 423px;
+}
+.rectangle-14 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 464px;
+}
+.rectangle-15 {
+  background: #d9d9d9;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 505px;
+}
+.rectangle-16 {
+  background: #ffffff;
+  width: 1207px;
+  height: 41px;
+  position: absolute;
+  left: 116px;
+  top: 546px;
+}
+.line-1 {
+  margin-top: -3px;
+  border-style: solid;
+  border-color: #413e3e;
+  border-width: 3px 0 0 0;
+  width: 574px;
+  height: 0px;
+  position: absolute;
+  left: 325px;
+  top: 341px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.line-2 {
+  margin-top: -3px;
+  border-style: solid;
+  border-color: #413e3e;
+  border-width: 3px 0 0 0;
+  width: 574px;
+  height: 0px;
+  position: absolute;
+  left: 560px;
+  top: 340px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.line-3 {
+  margin-top: -3px;
+  border-style: solid;
+  border-color: #413e3e;
+  border-width: 3px 0 0 0;
+  width: 574px;
+  height: 0px;
+  position: absolute;
+  left: 890px;
+  top: 340px;
+  transform-origin: 0 0;
+  transform: rotate(90deg) scale(1, 1);
+}
+.order {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 172px;
+  top: 300px;
+}
+.contents {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 1040px;
+  top: 299px;
+}
+.price {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 408px;
+  top: 300px;
+}
+.supplier {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 664px;
+  top: 295px;
+}

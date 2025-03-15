@@ -1,0 +1,118 @@
+.landing-page,
+.landing-page * {
+  box-sizing: border-box;
+}
+.landing-page {
+  background: #d143b2;
+  height: 1024px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.smoochez-co {
+  color: #fffdfd;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 140px;
+  top: 40px;
+  width: 390px;
+  height: 50px;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 963px;
+  top: 58px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1114px;
+  top: 58px;
+}
+.my-past-work {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1252px;
+  top: 58px;
+}
+._2025-02-24-1-05-52-1 {
+  border-radius: 127px;
+  opacity: 0.5;
+  width: 802px;
+  height: 807px;
+  position: absolute;
+  left: calc(50% - 391px);
+  top: calc(50% - 362px);
+  object-fit: cover;
+  aspect-ratio: 802/807;
+}
+.rectangle-1 {
+  background: #a8ff35;
+  border-radius: 10px;
+  width: 180px;
+  height: 57px;
+  position: absolute;
+  left: calc(50% - 80px);
+  top: calc(50% - 32px);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  aspect-ratio: 180/57;
+}
+.order-now {
+  color: #000000;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 665px;
+  top: 491px;
+  width: 142px;
+  height: 35px;
+}
+.hand-stitched-clothing-for-everyone {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 360px;
+  top: 410px;
+  width: 808px;
+  height: 66px;
+}
+._2025-02-24-12-29-50-1 {
+  width: 89px;
+  height: 96px;
+  position: absolute;
+  left: 31px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 89/96;
+}
+.follow-us-on-instagram-smoochiez-co {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  position: absolute;
+  left: 467px;
+  top: 552px;
+}

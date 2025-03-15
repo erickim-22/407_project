@@ -1,0 +1,141 @@
+.custom-order-page,
+.custom-order-page * {
+  box-sizing: border-box;
+}
+.custom-order-page {
+  background: #d143b2;
+  height: 1024px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.smoochez-co {
+  color: #fffdfd;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  left: 130px;
+  top: 40px;
+  width: 390px;
+  height: 50px;
+}
+.home {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 963px;
+  top: 58px;
+}
+.about {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1114px;
+  top: 58px;
+}
+.my-past-work {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1252px;
+  top: 58px;
+}
+.custom-order {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  position: absolute;
+  left: 602px;
+  top: 174px;
+  width: 248px;
+  height: 66px;
+}
+.please-describe-the-piece-of-clothing-you-would-like-customized-include-size-and-color {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 366px;
+  top: 283px;
+  width: 720px;
+  height: 125px;
+}
+.please-describe-the-design-you-would-like {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 366px;
+  top: 663px;
+  width: 720px;
+  height: 90px;
+}
+.rectangle-2 {
+  background: #fffefe;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 702px;
+  height: 262px;
+  position: absolute;
+  left: 366px;
+  top: 363px;
+}
+.rectangle-3 {
+  background: #fffefe;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  width: 702px;
+  height: 262px;
+  position: absolute;
+  left: 366px;
+  top: 708px;
+}
+._2025-02-24-12-29-50-1 {
+  width: 89px;
+  height: 96px;
+  position: absolute;
+  left: 30px;
+  top: 24px;
+  object-fit: cover;
+  aspect-ratio: 89/96;
+}
+.continue-to-payment-page {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Kalam-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 1000px;
+  top: 170px;
+  width: 350px;
+  height: 40px;
+}
+.arrow-2 {
+  width: 30px;
+  height: 0px;
+  position: absolute;
+  left: 1296px;
+  top: 190px;
+  transform: translate(0px, -7.36px);
+  overflow: visible;
+}
