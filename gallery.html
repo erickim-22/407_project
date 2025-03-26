@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Power of Compassion</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://kit.fontawesome.com/d5e11d398a.js" crossorigin="anonymous"></script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/smoochies_logo.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact us.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Gallery</h1>
+</section>
+
+<section class="slide">
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="images/IMG_9592.jpg" alt="img" draggable="false">
+        <img src="images/IMG_6549.jpg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+        <img src="images/IMG_7895.jpg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+        <img src="images/IMG_1168.jpeg" alt="img" draggable="false">
+      </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+</section>
+
+
+<!------footer----->
+
+<section class="footer">
+    <h4>Footer</h4>
+    <p>Blah blah blah blah blah blah blah.</p>
+</section>
+
+
+<!---JS for toggle menu--->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
