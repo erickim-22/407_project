@@ -12,7 +12,7 @@
 <body>
 <section class="sub-header">
     <nav>
-        <a href="index.html"><img src="smoochies_logo.png"></a>
+        <a href="index.html"><img src="images/smoochies_logo.png"></a>
         <div class="nav-links" id="navLinks">
             <i class="fa-solid fa-x" onclick="hideMenu()"></i>
             <ul>
@@ -24,18 +24,41 @@
         </div>
         <i class="fa-solid fa-bars" onclick="showMenu()"></i>
     </nav>
-    <h1>Contact Us</h1>
+    <h1>Custom Order Requests</h1>
 </section>
 
 
         <div class="contact-col">
             <form action="form-handler.php">
+                <header>
+                    <h1>Contact</h1>
+                </header>
                 <input type="text" name="name" placeholder="Name" required>
                 <input type="email" name="email" placeholder="Email address" required>
+                
+                <header>
+                    <h1>Order Details</h1>
+                </header>
                 <input type="text" name="item type" placeholder="Type of Item" required>
                 <textarea rows="8" name="description" placeholder="Description Including Size and Color" required></textarea>
+
+                <header>
+                    <h1>Shipping Information</h1>
+                </header>
                 <input type="text" name="address" placeholder="Address Line 1" required>
-                <button type="submit" class="hero-btn red-btn">Submit Order</button>
+                <input type="text" name="address2" placeholder="Address Line 2" required>
+                <input type="text" name="state" placeholder="State" required>
+                <input type="text" name="city" placeholder="City" required>
+                <input type="text" name="zipcode" placeholder="Zip Code" required>
+
+                <header>
+                    <h1>Payment Information</h1>
+                </header>
+                <input type="text" name="card name" placeholder="Name on Card" required>
+                <input type="text" name="card num" placeholder="Card Number" required>
+                <input type="text" name="expiration" placeholder="Exp. Date" required>
+                <input type="text" name="security" placeholder="Security Code" required>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
             </form>
         </div>
     </div>
