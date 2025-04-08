@@ -8,8 +8,8 @@ from functools import wraps
 # MySQL configuration
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'new_password'
-app.config['MYSQL_DB'] = 'user_management'
+app.config['MYSQL_PASSWORD'] = 'Yassumalz5702!'
+app.config['MYSQL_DB'] = 'smoochez'
 mysql = MySQL(app)
 
 # Flask login config
@@ -98,12 +98,12 @@ def custom_order():
     address2 = data['address2']
     city = data['city']
     state = data['state']
-    zip = data['zip']
+    zipcode = data['zip']
     
  
     
     cur = mysql.connection.cursor()
-    sql = "INSERT INTO orders (item_id, item_type, item_description, name, email, address1, address2, city, state, zip) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    sql = "INSERT INTO orders (item_id, item_type, item_description, name, email, address1, address2, city, state, zipcode) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
     cur.execute(sql, (item_id, item_type, item_description, name, email, address1, address2, city, state, zip))
     mysql.connection.commit()
     cur.close()
