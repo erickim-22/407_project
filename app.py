@@ -103,6 +103,29 @@ def custom_order():
     mysql.connection.commit()
     cur.close()
     
-    return jsonify(message="User added successfully"), 201
-  return jsonify(error="Invalid submission"), 400
+    return jsonify(message="Order Request Successful"), 201
+  return jsonify(error="Invalid Submission"), 400
 
+# --- view orders (admin only)
+@app.route('/users', methods=['GET'])
+@login_required
+@role_required('Admin')
+def get_users():
+  cur = mysql.connection.cursor()
+  cur.execute("SELECT (item_id, item_type, item_description, name, email FROM orders")
+  users = cur.fetchall()
+  cur.close()
+  user_dicts = []
+  for user in users:
+user_data = {
+    'item_id': user[0],
+    'item_type': user[1],
+    'item_description': user[2]
+    'name': user[3]
+    'email':user[4]
+}
+  return jsonify(user_dicts)
+
+# running app
+if __name__ == '__main__':
+  app.run(debug=True)
