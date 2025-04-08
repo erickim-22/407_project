@@ -94,12 +94,17 @@ def custom_order():
     item_description = data['item_description']
     name = data['name']
     email = data['email']
+    address1 = data['address1']
+    address2 = data['address2']
+    city = data['city']
+    state = data['state']
+    zip = data['zip']
     
  
     
     cur = mysql.connection.cursor()
-    sql = "INSERT INTO orders (item_id, item_type, item_description, name, email) VALUES (%s, %s, %s, %s, %s)"
-    cur.execute(sql, (item_id, item_type, item_description, name, email))
+    sql = "INSERT INTO orders (item_id, item_type, item_description, name, email, address1, address2, city, state, zip) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+    cur.execute(sql, (item_id, item_type, item_description, name, email, address1, address2, city, state, zip))
     mysql.connection.commit()
     cur.close()
     
@@ -110,21 +115,21 @@ def custom_order():
 @app.route('/users', methods=['GET'])
 @login_required
 @role_required('Admin')
-def get_users():
+def get_orders():
   cur = mysql.connection.cursor()
   cur.execute("SELECT (item_id, item_type, item_description, name, email FROM orders")
-  users = cur.fetchall()
+  orders = cur.fetchall()
   cur.close()
-  user_dicts = []
-  for user in users:
-user_data = {
-    'item_id': user[0],
-    'item_type': user[1],
-    'item_description': user[2]
-    'name': user[3]
-    'email':user[4]
+  order_dicts = []
+  for order in orders:
+order_data = {
+    'item_id': order[0],
+    'item_type': order[1],
+    'item_description': order[2]
+    'name': order[3]
+    'email': order[4]
 }
-  return jsonify(user_dicts)
+  return jsonify(order_dicts)
 
 # running app
 if __name__ == '__main__':
