@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmoochezCo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
-<script src="https://kit.fontawesome.com/d5e11d398a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d5e11d398a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <section class="sub-header">
@@ -28,71 +28,86 @@
     <h1>Custom Order Requests</h1>
 </section>
 
+<div class="contact-col" id="form-section">
+    <form id="customOrderForm">
+        <header><h1>Contact</h1></header>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email address" required>
 
-        <div class="contact-col">
-            <form action="form-handler.php">
-                <header>
-                    <h1>Contact</h1>
-                </header>
-                <input type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email address" required>
-                
-                <header>
-                    <h1>Order Details</h1>
-                </header>
-                <input type="text" name="item type" placeholder="Type of Item" required>
-                <textarea rows="8" name="description" placeholder="Description Including Size and Color" required></textarea>
+        <header><h1>Order Details</h1></header>
+        <input type="text" name="item_id" placeholder="Item ID" required>
+        <input type="text" name="item_type" placeholder="Type of Item" required>
+        <textarea rows="8" name="item_description" placeholder="Description Including Size and Color" required></textarea>
 
-                <header>
-                    <h1>Shipping Information</h1>
-                </header>
-                <input type="text" name="address" placeholder="Address Line 1" required>
-                <input type="text" name="address2" placeholder="Address Line 2" required>
-                <input type="text" name="state" placeholder="State" required>
-                <input type="text" name="city" placeholder="City" required>
-                <input type="text" name="zipcode" placeholder="Zip Code" required>
+        <header><h1>Shipping Information</h1></header>
+        <input type="text" name="address1" placeholder="Address Line 1" required>
+        <input type="text" name="address2" placeholder="Address Line 2">
+        <input type="text" name="city" placeholder="City" required>
+        <input type="text" name="state" placeholder="State" required>
+        <input type="text" name="zip" placeholder="Zip Code" required>
 
-                <header>
-                    <h1>Payment Information</h1>
-                </header>
-                <input type="text" name="card name" placeholder="Name on Card" required>
-                <input type="text" name="card num" placeholder="Card Number" required>
-                <input type="text" name="expiration" placeholder="Exp. Date" required>
-                <input type="text" name="security" placeholder="Security Code" required>
-                <button type="submit" class="hero-btn red-btn">Send Message</button>
-            </form>
-        </div>
-    </div>
-</section>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+    </form>
+</div>
 
-
-    
-
-
-<!------footer----->
+<div id="messageSent" style="display:none; text-align:center; padding:50px;">
+    <h2 style="font-family: 'Bebas Neue', cursive;">MESSAGE SENT</h2>
+    <p style="font-family: 'Bebas Neue', cursive;">Once confirmed, an email will be sent regarding payment method</p>
+    <button onclick="resetForm()" class="hero-btn red-btn">Make another request</button>
+</div>
 
 <section class="footer">
     <h4>Footer</h4>
-    
     <div class="icons">
         <i class="fa-brands fa-instagram"></i>
         <i class="fa-brands fa-linkedin"></i>
     </div>
-
 </section>
 
-
-<!---JS for toggle menu--->
 <script>
-
     var navLinks = document.getElementById("navLinks");
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
+    function showMenu(){ navLinks.style.right = "0"; }
+    function hideMenu(){ navLinks.style.right = "-200px"; }
 
+    // AJAX form submission
+    $(document).ready(function() {
+        $("#customOrderForm").submit(function(event) {
+            event.preventDefault();
+
+            const formData = {
+                name: $('input[name="name"]').val(),
+                email: $('input[name="email"]').val(),
+                item_id: $('input[name="item_id"]').val(),
+                item_type: $('input[name="item_type"]').val(),
+                item_description: $('textarea[name="item_description"]').val(),
+                address1: $('input[name="address1"]').val(),
+                address2: $('input[name="address2"]').val(),
+                city: $('input[name="city"]').val(),
+                state: $('input[name="state"]').val(),
+                zip: $('input[name="zip"]').val()
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: '/user',
+                contentType: 'application/json',
+                data: JSON.stringify(formData),
+                success: function(response) {
+                    $("#form-section").hide();
+                    $("#messageSent").show();
+                },
+                error: function(xhr) {
+                    alert("Something went wrong: " + xhr.responseText);
+                }
+            });
+        });
+    });
+
+    function resetForm() {
+        document.getElementById("customOrderForm").reset();
+        document.getElementById("form-section").style.display = "block";
+        document.getElementById("messageSent").style.display = "none";
+    }
 </script>
 
 </body>
